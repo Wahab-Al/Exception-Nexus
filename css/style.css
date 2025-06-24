@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --secondery-color: rgba(245, 245, 245, 0.664);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+body {
+    height: 10000px;
+    background: linear-gradient(#152025 0%,
+            #1f2a35 25%,
+            #22303c 50%,
+            #283746 65%,
+            #2e3e51 76%,
+            #243143 100%);
+}
+
+
+
+/* navbar */
+.navbar-brand {
+    border-right: 1px solid rgba(245, 245, 245, 0.664);
+    padding-right: 10px;
+}
+
+.form-control::placeholder {
+    color: rgba(245, 245, 245, 0.664);
+}
+
+/* Chrome/Opera/Safari */
+.form-control::-webkit-input-placeholder {
+    color: rgba(245, 245, 245, 0.664);
+}
+
+/* Firefox */
+.form-control::-moz-placeholder {
+    color: rgba(245, 245, 245, 0.664);
+    opacity: 1;
+}
+
+/* IE */
+.form-control:-ms-input-placeholder {
+    color: rgba(245, 245, 245, 0.664);
+}
+
+.secondary-dropdown-nav>li>a:hover {
+    background-color: #2e3e51;
+}
+
+/* logo image */
+.img-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav-link:hover>#first-letter-challenge-li {
+    color: tomato;
+}
+
+.nav-link:hover {
+    transform: scale(1.06, 1.06);
+    transition: all 0.3s ease-in-out;
+}
+
+.email-message {
+    font-size: small !important;
+    margin-left: 5px;
+}
+
+
+.modal-content {
+    background: linear-gradient(#152025 0%,
+            #1f2a35 25%,
+            #22303c 50%,
+            #283746 65%,
+            #2e3e51 76%,
+            #243143 100%);
+    color: rgba(245, 245, 245, 0.664);
+}
+
+.form-check-input:checked {
+    background-color: #073741;
+    border-color: #054b58;
+}
+
+/* ====  navbar  ==== */
