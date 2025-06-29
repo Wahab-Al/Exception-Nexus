@@ -8,15 +8,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- / Css Link -->
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Exception Nexus</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-transparent bg-gradient fixed-top">
-        <div class="container-fluid">
-          <img class="img-logo me-2" src="./img/logo.png" alt="" />
+      <nav class="navbar navbar-expand-lg bg-dark bg-gradient fixed-top">
+        <div class="container-fluid mb-2">
+          <img class="img-logo rounded-circle me-2" style="width: 50px; height: 50px;" src="./img/logo.png" alt="" />
           <a class="navbar-brand text-light fw-bolder fst-italic" href="#"
             >Exception<span class="text-warning fw-bolder">Nexus</span></a
           >
@@ -55,7 +57,7 @@
                   <span id="first-letter-challenge-li">C</span>hallenges
                 </a>
                 <ul
-                  class="dropdown-menu secondary-dropdown-nav bg-transparent bg-gradient border border-1 border-light text-light"
+                  class="dropdown-menu secondary-dropdown-nav bg-dark bg-gradient border border-1 border-light text-light"
                 >
                   <li>
                     <a class="dropdown-item text-light" href="#">HTML</a>
@@ -84,7 +86,7 @@
             </ul>
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2 bg-transparent border border-1 border-warning"
+                class="form-control me-2 bg-transparent border border-1 border-warning text-light"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
@@ -107,73 +109,187 @@
         </div>
       </nav>
       <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content my-5">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5 fw-medium" id="exampleModalLabel">
-                        Login
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="mb-3">
-                          <label for="Email-name" class="col-form-label"
-                            >Email:</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control bg-gradient"
-                            id="Email-name"
-                          />
-                          <p class="email-message fw-lighter text-truncate">your data is secure</p>
-                        </div>
-                        <div class="mb-3">
-                          <label for="passowrd" class="col-form-label"
-                            >Passowrd:</label
-                          >
-                          <input
-                            class="form-control"
-                            id="passowrd"
-                            type="password"
-                          ></input>
-                          <div class="form-check form-switch mt-1">
-                            <input class="form-check-input" type="checkbox" id="rememberMeSwitch">
-                            <label class="form-check-label text-light" for="rememberMeSwitch">Remember me</label>
-                        </div>
-
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer d-flex justify-content-between">
-                      <button type="button" class="btn btn-outline-dark text-light">
-                        Login
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-outline-dark text-light"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+          >
+          <div class="modal-dialog">
+            <div class="modal-content my-5">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 fw-medium" id="exampleModalLabel">
+                  Login
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
               </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="Email-name" class="col-form-label"
+                      >Email:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control bg-gradient"
+                      id="Email-name"
+                    />
+                    <p class="email-notice fw-lighter text-truncate">your data is secure</p>
+                  </div>
+                  <div class="mb-3">
+                    <label for="passowrd" class="col-form-label"
+                      >Passowrd:</label
+                    >
+                    <input
+                      class="form-control"
+                      id="passowrd"
+                      type="password"
+                    ></input>
+                    <div class="form-check form-switch mt-1">
+                      <input class="form-check-input" type="checkbox" id="rememberMeSwitch">
+                      <label class="form-check-label text-light" for="rememberMeSwitch">Remember me</label>
+                  </div>
+
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer d-flex justify-content-between">
+                <button type="button" class="btn btn-outline-dark text-light">
+                  Login
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-dark text-light"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
       <!-- /navbar -->
     </header>
     <!-- /header -->
+      <main class="container-fluid mt-5 pt-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/File2.jpg" class="d-block w-100" alt="File">
+              <div class="carousel-caption rounded rounded-3 d-none d-md-block">
+                <h5 class="fw-bold fs-3">Programming Basics</h5>
+                <p>Learn the foundations of coding, including variables, logic, and control structures.</p>
+                <button class="bg-success-subtle border-0 p-2 rounded text-dark">Learn more</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/Database.jpg" class="d-block w-100" alt="Database">
+              <div class="carousel-caption rounded rounded-3 d-none d-md-block">
+                <h5 class="fw-bold fs-3">SQL & Big Data</h5>
+                <p>Explore data storage, queries, and scalable solutions using modern database systems.</p>
+                <button class="bg-success-subtle border-0 p-2 rounded text-dark">Learn more</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/codeScreen.jpg" class="d-block w-100" alt="codeScreen">
+              <div class="carousel-caption rounded rounded-3 d-none d-md-block">
+                <h5 class="fw-bold fs-3">Full Stack Development</h5>
+                <p>Build complete web applications using both frontend technologies and backend frameworks.</p>
+                <button class="bg-success-subtle border-0 p-2 rounded text-dark">Learn more</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/cyberSecurity.jpg" class="d-block w-100" alt="cyber-security">
+              <div class="carousel-caption rounded rounded-3 d-none d-md-block">
+                <h5 class="fw-bold fs-3">Cyber Security</h5>
+                <p>Understand the principles of digital protection, encryption, and ethical hacking.</p>
+                <button class="bg-success-subtle border-0 p-2 rounded text-dark">Learn more</button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> 
+        <!-- /carousel slides -->
+        <!-- <ul class="social-icons position-absolute d-flex flex-column justify-content-center list-unstyled fw-bolder fs-3">
+          <li><i class="bi bi-facebook"></i></li>
+          <li><i class="bi bi-linkedin"></i></li>
+          <li><i class="bi bi-instagram"></i></li>
+          <li><i class="bi bi-youtube"></i></li>
+          <li><i class="bi bi-twitter-x"></i></li>
+        </ul> -->
+      </main>
+    <!-- /main -->
+      <div class="container-fluid">
+        <div class="welcome-section bg-black bg-gradient card rounded rounded-top-0 border-0" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title fs-4">Your Hub for Technical Growth</h5>
+          <p class="card-text"><code class="fw-bold fs-5">Exception Nexus </code> is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.</p>
+          <a href="#" class="btn btn-light text-dark text-capitalize">read more</a>
+        </div>
+      </div>
+      <hr class="text-light">
+      </div>
+      <!-- /welcome-section  -->
+      <div class="container-fluid">
+        <div class="card border-0 bg-black bg-gradient py-3 mb-3 text-center text-light shadow" style="width: 100%;">
+          <div class="card-body">
+          <h5 class="card-title fw-bold fs-3">Why Choose Exception Nexus?</h5>
+          </div>
+        </div>
+        <div class="accordion accordion-flus rounded rounded-top-2 shadow" id="accordionFlushExample">
+          <div class="accordion-item bg-transparent border border-0 shadow">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark bg-gradient shadow" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Companies & Candidates
+            </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-bg-light shadow">Not only does Exception Nexus prepare candidates for technical interviews, we also help companies identify top technical talent. From sponsoring contests to providing online assessments and training, we offer numerous services to businesses.</div>
+            </div>
+          </div>
+          <div class="accordion-item bg-transparent border border-0 shadow">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark bg-gradient shadow" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Questions, Community & Contests
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse shadow" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-bg-light shadow">Over 3800 questions for you to practice. Come and join one of the largest tech communities with hundreds of thousands of active users and participate in our contests to challenge yourself and earn rewards.</div>
+            </div>
+          </div>
+          <div class="accordion-item bg-transparent border border-0 shadow">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark bg-gradient shadow" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Practice Makes Perfect
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse shadow" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-bg-light shadow">Sharpen and Master your development skills with these technologies using Spaces.</div>
+            </div>
+          </div>
+        </div>
+        <hr class="text-light">
+      </div>
+    
     <!-- / Bootstrap js.min CDN Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   </body>

@@ -1,8 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* :root */
 
 :root {
+    --main-color: linear-gradient(#212529 0%,
+            #1b1f22 25%,
+            #16191b 50%,
+            #111416 75%,
+            #0c0e0f 100%);
     --secondery-color: rgba(245, 245, 245, 0.664);
+    --tertiary-color: linear-gradient(to top,
+            rgba(5, 76, 88, 0),
+            rgba(5, 76, 88, 0.1),
+            rgba(5, 76, 88, 0.2),
+            rgba(5, 76, 88, 0.4),
+            rgba(5, 76, 88, 0.576),
+            rgba(5, 76, 88, 0.8),
+            rgba(5, 76, 88, 0.9),
+            rgba(5, 76, 88, 1));
+    --third-color: linear-gradient(to bottom,
+            rgba(5, 76, 88, 0),
+            rgba(5, 76, 88, 0.1),
+            rgba(5, 76, 88, 0.2),
+            rgba(5, 76, 88, 0.4),
+            rgba(5, 76, 88, 0.576),
+            rgba(5, 76, 88, 0.8),
+            rgba(5, 76, 88, 0.9),
+            rgba(5, 76, 88, 1));
+    --fourth-color: #caac90;
+    --fifth-color: linear-gradient(to top,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 1));
+    --s-color: rgba(0, 0, 0, 0.712);
 }
+
+/* ==== :root ==== */
 
 * {
     margin: 0;
@@ -10,60 +49,53 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: "Ubuntu Mono", monospace;
+    font-family: "Winky Rough", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    height: 10000px;
-    background: linear-gradient(#152025 0%,
-            #1f2a35 25%,
-            #22303c 50%,
-            #283746 65%,
-            #2e3e51 76%,
-            #243143 100%);
+    /* height: 100vh; */
+    /* background: var(--main-color); */
+    background: var(--s-color);
+    /* background-color: #0d1721; */
 }
-
-
 
 /* navbar */
 .navbar-brand {
-    border-right: 1px solid rgba(245, 245, 245, 0.664);
+    border-right: 1px solid var(--secondery-color);
     padding-right: 10px;
 }
 
 .form-control::placeholder {
-    color: rgba(245, 245, 245, 0.664);
+    color: var(--secondery-color);
 }
 
 /* Chrome/Opera/Safari */
 .form-control::-webkit-input-placeholder {
-    color: rgba(245, 245, 245, 0.664);
+    color: var(--secondery-color);
 }
 
 /* Firefox */
 .form-control::-moz-placeholder {
-    color: rgba(245, 245, 245, 0.664);
+    color: var(--secondery-color);
     opacity: 1;
 }
 
 /* IE */
 .form-control:-ms-input-placeholder {
-    color: rgba(245, 245, 245, 0.664);
+    color: var(--secondery-color);
 }
 
 .secondary-dropdown-nav>li>a:hover {
     background-color: #2e3e51;
 }
 
-/* logo image */
-.img-logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
 .nav-link:hover>#first-letter-challenge-li {
     color: tomato;
+    font-weight: bolder !important;
 }
 
 .nav-link:hover {
@@ -71,20 +103,20 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.email-message {
+@media (max-width: 768px) {
+    .nav-link:hover {
+        transform: none;
+    }
+}
+
+.email-notice {
     font-size: small !important;
     margin-left: 5px;
 }
 
-
 .modal-content {
-    background: linear-gradient(#152025 0%,
-            #1f2a35 25%,
-            #22303c 50%,
-            #283746 65%,
-            #2e3e51 76%,
-            #243143 100%);
-    color: rgba(245, 245, 245, 0.664);
+    background: var(--main-color);
+    color: var(--secondery-color);
 }
 
 .form-check-input:checked {
@@ -93,3 +125,42 @@ body {
 }
 
 /* ====  navbar  ==== */
+
+/* main - slides */
+
+.carousel-caption {
+    background: var(--fifth-color);
+    color: var(--secondery-color);
+}
+
+.social-icons {
+    transform: translate(900px, -97%);
+}
+
+/* ==== main - slides ==== */
+
+/* welcome-section */
+
+.welcome-section {
+    background: var(--third-color);
+    color: var(--secondery-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ==== welcome-section ==== */
+
+
+/* Accordion */
+
+.card-title,
+.accordion-button {
+    color: var(--secondery-color);
+}
+
+.accordion-button[aria-expanded="true"] {
+    color: var(--secondery-color);
+}
+
+
+/* ==== Accordion ==== */
