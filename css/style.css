@@ -14,9 +14,6 @@
             rgba(5, 76, 88, 0.1),
             rgba(5, 76, 88, 0.2),
             rgba(5, 76, 88, 0.4),
-            rgba(5, 76, 88, 0.576),
-            rgba(5, 76, 88, 0.8),
-            rgba(5, 76, 88, 0.9),
             rgba(5, 76, 88, 1));
     --third-color: linear-gradient(to bottom,
             rgba(5, 76, 88, 0),
@@ -33,11 +30,15 @@
             rgba(0, 0, 0, 0.1),
             rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.8),
-            rgba(0, 0, 0, 0.9),
             rgba(0, 0, 0, 1));
+
+    --sexth-color: linear-gradient(to top,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 1));
+
     --s-color: rgba(0, 0, 0, 0.712);
 }
 
@@ -61,6 +62,9 @@ body {
     /* background: var(--main-color); */
     background: var(--s-color);
     /* background-color: #0d1721; */
+    /* background-color: #030914; */
+    /* background-color:#38444d; */
+    /* background-color: #1d2a35; */
 }
 
 /* navbar */
@@ -142,7 +146,6 @@ body {
 /* welcome-section */
 
 .welcome-section {
-    background: var(--third-color);
     color: var(--secondery-color);
     padding: 20px;
     border-radius: 10px;
@@ -151,9 +154,9 @@ body {
 /* ==== welcome-section ==== */
 
 
-/* Accordion */
+/* why-choose-section & Accordion */
 
-.card-title,
+.title-why-choose-section,
 .accordion-button {
     color: var(--secondery-color);
 }
@@ -162,5 +165,79 @@ body {
     color: var(--secondery-color);
 }
 
+/* ==== why-choose-section & Accordion ==== */
 
-/* ==== Accordion ==== */
+/*  imgFixed-section  */
+
+.fixedImg {
+    height: 400px;
+}
+
+#imgFixed-section {
+    background-image: url(../img/system-hacked.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* ==== imgFixed-section ==== */
+
+/* course-card */
+
+@media (min-width: 769px) {
+    .course-card {
+        width: 24rem !important;
+    }
+}
+
+.course-card {
+    position: relative;
+}
+
+.course-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.course-card:hover::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--fifth-color);
+    border-radius: 2px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.course-card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.course-card:hover::before {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--sexth-color);
+    border-radius: 2px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ==== course-card ==== */
