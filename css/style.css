@@ -169,12 +169,21 @@ body {
 
 /*  imgFixed-section  */
 
-.fixedImg {
+.fixedImg,
+.fixedImgII {
     height: 400px;
 }
 
 #imgFixed-section {
     background-image: url(../img/system-hacked.jpg);
+}
+
+#imgFixed-sectionII {
+    background-image: url(../img/cloud.jpg);
+}
+
+#imgFixed-section,
+#imgFixed-sectionII {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -241,3 +250,91 @@ body {
 }
 
 /* ==== course-card ==== */
+/* team-card */
+
+
+.team-card-I,
+.team-card-II,
+.team-card-III {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.team-card-I {
+    background-image: url(../img/teams/team1.jpg);
+    background-position: center;
+}
+
+.team-card-II {
+    background-image: url(../img/teams/team3.jpg);
+    background-position: center center;
+}
+
+.team-card-III {
+    background-image: url(../img/teams/team2.jpg);
+}
+
+
+.team-card-I>img,
+.team-card-II>img,
+.team-card-III>img {
+    width: 70px;
+    height: 70px;
+    top: 70%;
+    left: 10%;
+    padding: 7px;
+    border: 1px solid var(--secondery-color);
+}
+
+.team-card-I>card-body,
+.team-card-II>card-body,
+.team-card-III>card-body {
+    top: 10%;
+    left: 10%;
+}
+
+@media (max-width: 768px) {
+
+    .team-card-I,
+    .team-card-II,
+    .team-card-III {
+        width: 100% !important;
+        height: 400px;
+    }
+
+    .team-card-I>img,
+    .team-card-II>img,
+    .team-card-III>img {
+        width: 100px;
+        height: 100px;
+        top: 60%;
+        left: 10%;
+    }
+}
+
+.team-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--fifth-color);
+    border-radius: 2px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-branch {
+    top: 85%;
+    left: 7%;
+    background: linear-gradient(to left,
+            rgba(13, 23, 33, 0.1),
+            rgba(13, 23, 33, 0.3),
+            rgba(13, 23, 33, 0.6),
+            rgba(13, 23, 33, 1));
+    border-radius: 10px;
+    height: 50px;
+}
