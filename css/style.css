@@ -9,21 +9,16 @@
             #111416 75%,
             #0c0e0f 100%);
     --secondery-color: rgba(245, 245, 245, 0.664);
-    --tertiary-color: linear-gradient(to top,
+    --tertiary-color: linear-gradient(to right,
             rgba(5, 76, 88, 0),
             rgba(5, 76, 88, 0.1),
             rgba(5, 76, 88, 0.2),
-            rgba(5, 76, 88, 0.4),
-            rgba(5, 76, 88, 1));
-    --third-color: linear-gradient(to bottom,
+            rgba(5, 76, 88, 0.3));
+    --third-color: linear-gradient(to left,
             rgba(5, 76, 88, 0),
             rgba(5, 76, 88, 0.1),
             rgba(5, 76, 88, 0.2),
-            rgba(5, 76, 88, 0.4),
-            rgba(5, 76, 88, 0.576),
-            rgba(5, 76, 88, 0.8),
-            rgba(5, 76, 88, 0.9),
-            rgba(5, 76, 88, 1));
+            rgba(5, 76, 88, 0.3));
     --fourth-color: #caac90;
     --fifth-color: linear-gradient(to top,
             rgba(0, 0, 0, 0),
@@ -40,6 +35,21 @@
             rgba(0, 0, 0, 1));
 
     --s-color: rgba(0, 0, 0, 0.712);
+
+    --swhite-color: linear-gradient(to top,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.7)
+    );
+
+    --card-color: linear-gradient(
+  to left,
+  rgba(255, 178, 36,0.1), 
+  rgba(255, 178, 36, 0.3), 
+  rgba(255, 178, 36,0.4)
+);
 }
 
 /* ==== :root ==== */
@@ -60,11 +70,11 @@ html {
 body {
     /* height: 100vh; */
     /* background: var(--main-color); */
-    background: var(--s-color);
+    /* background: var(--s-color); */
     /* background-color: #0d1721; */
-    /* background-color: #030914; */
+    background-color: #030914;
     /* background-color:#38444d; */
-    /* background-color: #1d2a35; */
+    background-color: #1d2a35;
 }
 
 /* navbar */
@@ -338,3 +348,131 @@ body {
     border-radius: 10px;
     height: 50px;
 }
+
+.team-card{
+    transform: none;
+}
+
+.team-card:hover{
+    transform: scale(0.9, 0.9);
+    transition: all 0,6s ease-in-out;
+    cursor: pointer;
+}
+
+.team-card:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left:  0;
+    width: 100%;
+    height: 100%;
+    background: var(--s-color);
+    border-radius: 2px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-card:hover h5{
+    color: rgb(233, 164, 35) !important;
+}
+
+.team-card:hover p{
+    color: whitesmoke !important;
+}
+
+.tech-tracks{
+    position: relative;
+    cursor: pointer;
+}
+
+.tech-tracks-img-container{
+    transform: translateX(-35px) skewX(-5deg);
+    transition: all 0.8s ease-in-out;
+}
+
+.tech-tracks-img {
+    transform: translateX(35px) skewX(5deg);
+    transition: all 0.8s ease-in-out;
+}
+
+.tech-tracks:hover .tech-tracks-title::after{
+    width: 120px;
+}
+
+.tech-tracks:hover .tech-tracks-img {
+    transform: translateX(35px) skewX(5deg) scale(1.1);
+    transition: all 0.8s ease-in-out;
+}
+
+.tech-tracks-title::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 90px;
+    height: 7px;
+    background-color: rgb(255, 178, 36);
+    border-radius: 3px;
+    z-index: 2;
+}
+
+.tech-tracks-img-containerI{
+    transform: translateX(35px) skewX(5deg);
+    transition: all 0.8s ease-in-out;
+}
+
+.tech-tracks-imgI {
+    transform: translateX(-35px) skewX(-5deg);
+    transition: all 0.8s ease-in-out;
+}
+
+.tech-tracks:hover .tech-tracks-imgI {
+    transform: translateX(-35px) skewX(-5deg) scale(1.1);
+    transition: all 0.8s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    .tech-tracks-img-container, .tech-tracks-img-containerI, .tech-tracks:hover .tech-tracks-imgI, .tech-tracks-img, .tech-tracks-imgI, .tech-tracks:hover .tech-tracks-img, .tech-tracks:hover .tech-tracks-imgI {
+        transform: none;
+    }
+    .row.g-0 {
+        display: flex;  
+        flex-direction: column;  
+    }
+
+    .tech-tracks-contentI {
+        order: 2 !important;  
+    }
+
+    .tech-tracks-img-containerI {
+        order: 1 !important;  
+    }
+
+    .buttons-group {
+        order: 3 !important;
+    }
+}
+
+.tech-tracks-content::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: var(--tertiary-color);
+}
+
+.tech-tracks-contentI::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: var(--third-color);
+}
+
+
