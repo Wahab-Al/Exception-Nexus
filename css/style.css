@@ -447,6 +447,14 @@ html {
     z-index: 2;
 }
 
+
+@media (max-width: 471px) {
+    .tech-tracks-title::after{
+        display: none !important;
+    }
+}
+
+
 .tech-tracks-img-containerI{
     transform: translateX(35px) skewX(5deg);
     transition: all 0.8s ease-in-out;
