@@ -34,13 +34,6 @@
             rgba(0, 0, 0, 1));
 
     --s-color: rgba(0, 0, 0, 0.712);
-
-    --card-color: linear-gradient(
-  to left,
-  rgba(255, 178, 36,0.1), 
-  rgba(255, 178, 36, 0.3), 
-  rgba(255, 178, 36,0.4)
-);
 }
 
 /* ==== :root ==== */
@@ -59,6 +52,7 @@ html {
 }
 
 /* navbar */
+
 .navbar-brand {
     border-right: 1px solid var(--secondery-color);
     padding-right: 10px;
@@ -96,6 +90,7 @@ html {
 .nav-link:hover {
     transform: scale(1.06, 1.06);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -127,13 +122,23 @@ html {
 }
 
 .carousel-caption {
-    background: var(--fifth-color);
+    background: linear-gradient(
+  to bottom,
+  rgba(113, 6, 39, 1),   
+  rgba(113, 6, 39, 0.5),   
+  rgba(113, 6, 39, 0.2),
+  rgba(113, 6, 39, 0.1),
+  rgba(113, 6, 39, 0)     
+);
     color: var(--secondery-color);
 }
 
 .social-icons {
     color: turquoise;
     cursor: pointer;
+}
+.social-icons>li:hover {
+    color: teal;
 }
 
 /* ==== main - slides ==== */
@@ -161,7 +166,8 @@ html {
   #444444 50%,
   #666666 70%,
   #e8f0fe 100%
-)}
+)
+}
 
 .title-why-choose-section,
 .accordion-button {
@@ -220,7 +226,6 @@ html {
 
 .course-card {
     position: relative;
-    cursor: pointer;
 }
 
 .course-card::after {
@@ -271,7 +276,7 @@ html {
 /* team-card */
 
 .top-teams-bg{
-background: linear-gradient(135deg, #222831, #393e46, #444444);
+    background-color: #e0f4f7;
 }
 
 .team-card-I,
@@ -297,7 +302,6 @@ background: linear-gradient(135deg, #222831, #393e46, #444444);
 .team-card-III {
     background-image: url(../img/teams/team2.jpg);
 }
-
 
 .team-card-I>img,
 .team-card-II>img,
