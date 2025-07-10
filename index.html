@@ -18,7 +18,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-dark bg-gradient fixed-top">
         <div class="container-fluid mb-2">
-          <img class="img-logo rounded-circle me-2" style="width: 50px; height: 50px;" src="./img/logo.png" alt="" />
+          <img class="img-logo rounded-circle me-2" style="width: 50px; height: 50px;" src="./img/logo.png" alt="logo picture" />
           <a class="navbar-brand text-light fw-bolder fst-italic" href="#"
             >Exception<span class="text-warning fw-bolder">Nexus</span></a
           >
@@ -176,6 +176,7 @@
       <!-- /navbar -->
     </header>
     <!-- /header -->
+    <div class="main-bg">
       <main class="container-fluid mt-5 pt-5">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
 
@@ -229,16 +230,16 @@
           </button>
         </div> 
         <!-- /carousel slides -->
-        <!-- <ul class="social-icons position-absolute d-flex flex-column justify-content-center list-unstyled fw-bolder fs-3">
-          <li><i class="bi bi-facebook"></i></li>
-          <li><i class="bi bi-linkedin"></i></li>
-          <li><i class="bi bi-instagram"></i></li>
-          <li><i class="bi bi-youtube"></i></li>
-          <li><i class="bi bi-twitter-x"></i></li>
-        </ul> -->
+      <ul class="social-icons position-fixed top-50 end-0 translate-middle-y d-flex flex-column justify-content-center list-unstyled fw-bolder fs-2 z-3 p-5">
+        <li><i class="bi bi-facebook"></i></li>
+        <li><i class="bi bi-linkedin"></i></li>
+        <li><i class="bi bi-instagram"></i></li>
+        <li><i class="bi bi-youtube"></i></li>
+        <li><i class="bi bi-twitter-x"></i></li>
+      </ul>
       </main>
     <!-- /main -->
-      <section class="container-fluid">
+      <section class="container-fluid pb-2">
         <div class="welcome-section bg-black bg-gradient card rounded rounded-top-0 border-0" style="width: 100%;">
         <div class="card-body">
           <h5 class="card-title fs-4">Your Hub for Technical Growth</h5>
@@ -247,10 +248,13 @@
         </div>
       </div>
       <hr class="text-light">
-      </section>
-      <!-- /welcome-section  -->
-      <section class="container-fluid why-choose-section">
-        <div class="card border-0 bg-black bg-gradient py-3 mb-3 text-center text-light shadow" style="width: 100%;">
+    </section>
+  </div>
+  
+  <!-- /welcome-section  -->
+  <div class="why-choose-bg pt-4">
+    <section class="container-fluid why-choose-section">
+      <div class="card border-0 bg-black bg-gradient py-3 mb-3 text-center text-light shadow" style="width: 100%;">
           <div class="card-body">
           <h5 class="card-title title-why-choose-section fw-bold fs-3"><i class="bi bi-patch-question text-warning"></i> Why Choose Exception Nexus?</h5>
           </div>
@@ -300,7 +304,6 @@
         <hr class="text-light">
       </section>
       <!-- /change-debugger-section -->
-
       <section class="container-fluid change-debugger-section">
         <h5 class="text-light"><span class="text-info">Debugger</span> your code </h5>
         <div class="mb-3 position-relative">
@@ -308,10 +311,10 @@
           <button type="button" class="btn btn-outline-light" id="liveAlertBtnDebugger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Debugging is running" data-bs-trigger="auto">Debugger</button>
           <textarea class="form-control mt-2 bg-secondary bg-gradient" id="exampleFormControlTextarea1" rows="5" placeholder="enter your code here"></textarea>
         </div>
-        <hr class="text-light">
+        <hr class="text-dark">
       </section>
       <!-- /change-debugger-section -->
-      
+
       <section class="container-fluid">
         <div class="fixedImg position-relative">
           <div id="imgFixed-section" class="position-absolute rounded rounded-3">
@@ -319,7 +322,8 @@
         </div>
       </section>
       <!-- /fixedImg -->
-
+      </div>
+      <div class="featured-cousrses-bg">
       <section class="container-fluid featured-Courses">
         <div class="card border-0 bg-black bg-gradient py-3 mb-3 text-center text-light shadow" style="width: 100%;">
           <div class="card-body">
@@ -328,149 +332,150 @@
         </div>
       </section>
       <!-- /featured-Courses -->
-
-      <section class="w-100 d-flex flex-wrap justify-content-center align-items-center gap-2 mb-5">
-        <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
-          <img src="./img/courses-images/sql.avif" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5 class="card-title">SQL Roadmap</h5>
-              <a href="#" class="btn btn-success mb-3 z-2">Enroll</a>
+      <div class="featured-Courses-bg">
+        <section class="w-100 d-flex flex-wrap justify-content-center align-items-center gap-2 ">
+          <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
+            <img src="./img/courses-images/sql.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title">SQL Roadmap</h5>
+                <a href="#" class="btn btn-success mb-3 z-2">Enroll</a>
+              </div>
+              <p class="card-text">Analyse and manipulate large data.</p>
             </div>
-            <p class="card-text">Analyse and manipulate large data.</p>
           </div>
-        </div>
-        <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
-          <img src="./img/courses-images/java-dsa.avif" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5 class="card-title">Java with Beginner</h5>
-              <a href="#" class="btn btn-danger mb-3 z-2">Enroll</a>
+          <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
+            <img src="./img/courses-images/java-dsa.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title">Java with Beginner</h5>
+                <a href="#" class="btn btn-danger mb-3 z-2">Enroll</a>
+              </div>
+              <p class="card-text">Master Java programming concepts.</p>
             </div>
-            <p class="card-text">Master Java programming concepts.</p>
           </div>
-        </div>
-        <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
-          <img src="./img/courses-images/python-dsa.avif" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5 class="card-title">Python with Beginner</h5>
-              <a href="#" class="btn btn-primary mb-3 z-2">Enroll</a>
+          <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
+            <img src="./img/courses-images/python-dsa.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title">Python with Beginner</h5>
+                <a href="#" class="btn btn-primary mb-3 z-2">Enroll</a>
+              </div>
+              <p class="card-text">Master Python for data analysis.</p>
             </div>
-            <p class="card-text">Master Python for data analysis.</p>
           </div>
-        </div>
-        
-        <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
-          <img src="./img/courses-images/react-development.avif" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5 class="card-title">React JS Roadmap</h5>
-              <a href="#" class="btn btn-success mb-3 z-2">Enroll</a>
+          
+          <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
+            <img src="./img/courses-images/react-development.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title">React JS Roadmap</h5>
+                <a href="#" class="btn btn-success mb-3 z-2">Enroll</a>
+              </div>
+              <p class="card-text">Build dynamic interfaces using JSX.</p>
             </div>
-            <p class="card-text">Build dynamic interfaces using JSX.</p>
           </div>
-        </div>
-        <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
-          <img src="./img/courses-images/html.avif" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5 class="card-title">Frontend Roadmap</h5>
-              <a href="#" class="btn btn-danger mb-3 z-2">Enroll</a>
+          <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
+            <img src="./img/courses-images/html.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title">Frontend Roadmap</h5>
+                <a href="#" class="btn btn-danger mb-3 z-2">Enroll</a>
+              </div>
+              <p class="card-text">Master front-end web development.</p>
             </div>
-            <p class="card-text">Master front-end web development.</p>
           </div>
-        </div>
-        <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
-          <img src="./img/courses-images/c-dsa.avif" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5 class="card-title">C language DSA</h5>
-              <a href="#" class="btn btn-primary mb-3 z-2">Enroll</a>
+          <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
+            <img src="./img/courses-images/c-dsa.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title">C language DSA</h5>
+                <a href="#" class="btn btn-primary mb-3 z-2">Enroll</a>
+              </div>
+              <p class="card-text">Essential C programming concepts.</p>
             </div>
-            <p class="card-text">Essential C programming concepts.</p>
           </div>
-        </div>
-        <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
-          <img src="./img/courses-images/data-structures-and-algorithms.avif" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5 class="card-title">DSA C++ Roadmap</h5>
-              <a href="#" class="btn btn-success mb-3 z-2">Enroll</a>
+          <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
+            <img src="./img/courses-images/data-structures-and-algorithms.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title">DSA C++ Roadmap</h5>
+                <a href="#" class="btn btn-success mb-3 z-2">Enroll</a>
+              </div>
+              <p class="card-text">Practice problems on data structures & algorithms.</p>
             </div>
-            <p class="card-text">Practice problems on data structures & algorithms.</p>
           </div>
-        </div>
-        <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
-          <img src="./img/courses-images/ai-ml.avif" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5 class="card-title">AI Basics Roadmap</h5>
-              <a href="#" class="btn btn-outline-dark text-danger disabled mb-3 z-2">Comming Soon</a>
+          <div class="card course-card position-relative shadow border border-0 shadow m-xl-3" style="width: 18rem;">
+            <img src="./img/courses-images/ai-ml.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="card-title">AI Basics Roadmap</h5>
+                <a href="#" class="btn btn-outline-dark text-danger disabled mb-3 z-2">Comming Soon</a>
+              </div>
+              <p class="card-text">AI and machine learning.</p>
             </div>
-            <p class="card-text">AI and machine learning.</p>
           </div>
-        </div>
-      </section>
-      <!-- /featured-Courses -->
-      <!-- <section class="bg-info-subtle pt-5 pb-5"> -->
-      <section class="container-fluid">
-        <div class="fixedImgII position-relative">
-          <div id="imgFixed-sectionII" class="position-absolute rounded rounded-3">
-          </div>
-        </div>
-        <hr class="text-light">
-      </section>
-      <!-- </section> -->
-      <!-- /fixedImgII -->
-
-      <section class="container-fluid top-teams-section">
-        <div class="card border-0 bg-black bg-gradient py-3 mb-3 text-center text-light shadow" style="width: 100%;">
-          <div class="card-body">
-          <h5 class="card-title fw-bold fs-3"><i class="bi bi-award text-warning"></i>Top Teams<i class="bi bi-award text-warning"></i></h5>
-          </div>
-        </div>
-      </section>
-      <!-- /top-teams-section -->
-        
-      <section class="container-fluid top-teams d-flex flex-wrap justify-content-center align-items-center gap-5 mb-5">
-        <div class="card team-card team-card-I shadow border border-0 rounded rounded-2 w-25 gap-2 position-relative">
-          <img src="./img/teams/6f8m_b2nv_220704.jpg" class="card-img-top position-absolute rounded rounded-circle shadow" alt="...">
-          <div class="card-body rounded rounded-2 position-absolute z-2">
-            <h5 class="card-title text-light">Pixel Surgeons</h5>
-            <p class="card-text text-warning"><i class="bi bi-clock"></i> January 7, 2025</p>
-          </div>
-          <div class="team-branch border border-0 fs-6 position-absolute ps-2 z-2">
-            <h6 class="team-branch-title text-warning">Ux-UI Team</h6>
-            <p class="team-discreption text-light">member since 2005</p>
-          </div>
-        </div> 
-        <div class="card team-card team-card-II shadow border border-0 rounded rounded-2 w-25 gap-2 position-relative">
-          <img src="./img/teams/654.jpg" class="card-img-top position-absolute rounded rounded-circle shadow" alt="...">
-          <div class="card-body position-absolute z-2">
-            <h5 class="card-title text-light">Crypto Ninjas</h5>
-            <p class="card-text text-warning"><i class="bi bi-clock"></i> January 7, 2025</p>
-          </div>
-          <div class="team-branch border border-0 fs-6 position-absolute ps-2 z-2">
-            <h6 class="team-branch-title text-warning">Network Security Operations</h6>
-            <p class="team-discreption text-light">member since 1995</p>
-          </div>
-        </div>
-        <div class="card team-card team-card-III shadow border border-0 rounded rounded-2 w-25 gap-2 position-relative">
-          <img src="./img/teams/bvhq_0r1z_220704.jpg" class="card-img-top position-absolute rounded rounded-circle shadow" alt="...">
-          <div class="card-body position-absolute z-2">
-            <h5 class="card-title text-light">Byte Benders</h5>
-            <p class="card-text text-warning"><i class="bi bi-clock"></i> January 7, 2025</p>
-          </div>
-          <div class="team-branch border border-0 fs-6  position-absolute ps-2 z-2">
-            <h6 class="team-branch-title text-warning">Fullstack Team</h6>
-            <p class="team-discreption text-light">member since 2000</p>
-          </div>
-        </div>
-      <!-- /top-teams -->
-      <div class="container-fluid">
-        <hr class="text-light mb-5">
+        </section>
       </div>
+      <!-- /featured-Courses -->
+        <section class="container-fluid py-2">
+          <div class="fixedImgII position-relative ">
+            <div id="imgFixed-sectionII" class="position-absolute rounded rounded-3 mt-3">
+            </div>
+          </div>
+          <hr class="text-light mt-5">
+        </section>
+        <!-- /fixedImgII -->
+    </div>
+    <div class="top-teams-bg pb-5 pt-3">
+        <section class="container-fluid top-teams-section">
+          <div class="card border-0 bg-black bg-gradient py-3 mb-3 text-center text-light shadow" style="width: 100%;">
+            <div class="card-body">
+            <h5 class="card-title fw-bold fs-3"><i class="bi bi-award text-warning"></i>Top Teams<i class="bi bi-award text-warning"></i></h5>
+            </div>
+          </div>
+        </section>
+        <!-- /top-teams-section -->
+        <section class="container-fluid top-teams d-flex flex-wrap justify-content-center align-items-center gap-5">
+          <div class="card team-card team-card-I shadow border border-0 rounded rounded-2 w-25 gap-2 position-relative mb-5">
+            <img src="./img/teams/6f8m_b2nv_220704.jpg" class="card-img-top position-absolute rounded rounded-circle shadow" alt="...">
+            <div class="card-body rounded rounded-2 position-absolute z-2">
+              <h5 class="card-title text-light">Pixel Surgeons</h5>
+              <p class="card-text text-warning"><i class="bi bi-clock"></i> January 7, 2025</p>
+            </div>
+            <div class="team-branch border border-0 fs-6 position-absolute ps-2 z-2">
+              <h6 class="team-branch-title text-warning">Ux-UI Team</h6>
+              <p class="team-discreption text-light">member since 2005</p>
+            </div>
+          </div> 
+          <div class="card team-card team-card-II shadow border border-0 rounded rounded-2 w-25 gap-2 position-relative mb-5">
+            <img src="./img/teams/654.jpg" class="card-img-top position-absolute rounded rounded-circle shadow" alt="...">
+            <div class="card-body position-absolute z-2">
+              <h5 class="card-title text-light">Crypto Ninjas</h5>
+              <p class="card-text text-warning"><i class="bi bi-clock"></i> January 7, 2025</p>
+            </div>
+            <div class="team-branch border border-0 fs-6 position-absolute ps-2 z-2">
+              <h6 class="team-branch-title text-warning">Network Security Operations</h6>
+              <p class="team-discreption text-light">member since 1995</p>
+            </div>
+          </div>
+          <div class="card team-card team-card-III shadow border border-0 rounded rounded-2 w-25 gap-2 position-relative mb-5">
+            <img src="./img/teams/bvhq_0r1z_220704.jpg" class="card-img-top position-absolute rounded rounded-circle shadow" alt="...">
+            <div class="card-body position-absolute z-2">
+              <h5 class="card-title text-light">Byte Benders</h5>
+              <p class="card-text text-warning"><i class="bi bi-clock"></i> January 7, 2025</p>
+            </div>
+            <div class="team-branch border border-0 fs-6  position-absolute ps-2 z-2">
+              <h6 class="team-branch-title text-warning">Fullstack Team</h6>
+              <p class="team-discreption text-light">member since 2000</p>
+            </div>
+          </div>
+          <hr class="text-light mb-5">
+        </section>
+        
+        <!-- /top-teams -->
+    </div>
+    <div class="tech-tracks-bg p-5">
       <section class="container-fluid">
         <h2 class="main-title-tech-tracks text-center text-light mb-4 display-5">Core Tech Tracks</h2>
         <div class="card tech-tracks mb-4 w-75 m-auto border border-0 shadow ">
@@ -556,14 +561,101 @@
         <!-- /Logic & Problem Solving Lab -->
       </section>
       <!-- /tech-tracks -->
-
-      <section class="container-fluid">
-        <h2 class="main-title-tech-tracks text-center text-light mb-4 text-uppercase display-5">Joun Us</h2>
-
+    </div>
+    <div class="social-media-bg p-5">
+      <section class="container-fluid m-auto social-media-last-section">
+        <h2 class="main-title-tech-tracks text-center text-light mt-5 mb-4 text-uppercase display-5">Joun Us</h2>
+        <div class="row justify-content-evenly mb-5">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="card social-media-last-section-card m-auto mb-2 shadow" style="width: 15rem;">
+              <div class="card-body text-center">
+                <h5 class="card-title">Nexus-Group</h5>
+                <i class="bi bi-facebook fs-1 text-primary"></i>            
+                <h6 type="button" class="card-subtitle mb-2 text-body-secondary z-3">Join</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card social-media-last-section-card m-auto mb-2 shadow" style="width: 15rem;">
+              <div class="card-body text-center">
+                <h5 class="card-title">Nexus-tube</h5>
+                <i class="bi bi-youtube fs-1 text-danger"></i>         
+                <h6 type="button" class="card-subtitle mb-2 text-body-secondary z-3">subscribe</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="card social-media-last-section-card m-auto mb-2 shadow" style="width: 15rem;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Nexus-channel</h5>
+              <i class="bi bi-whatsapp fs-1 text-success"></i>      
+              <h6 type="button" class="card-subtitle mb-2 text-body-secondary z-3">join</h6>
+            </div>
+          </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card social-media-last-section-card m-auto mb-2 shadow" style="width: 15rem;">
+              <div class="card-body text-center">
+                <h5 class="card-title">Nexus-X</h5>
+                <i class="bi bi-twitter-x fs-1"></i>          
+                <h6 type="button" class="card-subtitle mb-2 text-body-secondary z-3">follow</h6>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+      <!-- /social-media-last-section -->
+    </div>
+    <footer class="container-fluid bg-black text-light pt-4 pb-4">
+      <div class="container">
+        <div class="row justify-content-between">
+          <!-- Contact & Address -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 d-flex flex-column align-items-center">
+            <div class="card d-flex flex-row justify-content-center align-items-center border border-opacity-10 border-start-0 border-end-0 rounded-0 bg-transparent pt-3 pb-3" style="width: 15rem;">
+              <img class="img-logo rounded-circle shadow" style="width: 50px; height: 50px;" src="./img/logo.png" alt="logo picture" />
+              <div class="footer-title-part1 ms-2 text-white">Contact & Address</div>
+            </div>
+            <ul class="contact-adress-list list-unstyled mt-2">
+              <li class="link-secondary">Tel: +359084417</li>
+              <li class="link-secondary">Address: Germany, Berlin</li>
+              <li class="link-secondary">Fax: +3266650763</li>
+            </ul>
+          </div>
+
+          <!-- Guides -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 d-flex flex-column align-items-center">
+            <div class="card d-flex flex-row justify-content-center align-items-center border border-opacity-10 border-start-0 border-end-0 rounded-0 bg-transparent pt-3 pb-3" style="width: 15rem;">
+              <img class="img-logo rounded-circle shadow" style="width: 50px; height: 50px;" src="./img/logo.png" alt="logo picture" />
+              <div class="footer-title-part1 ms-2 text-white">Guides</div>
+            </div>
+            <ul class="Guides-list list-unstyled mt-2">
+              <li class="link-secondary">Getting started</li>
+              <li class="link-secondary">Webpack</li>
+              <li class="link-secondary">Vite</li>
+            </ul>
+          </div>
+
+          <!-- Community -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 d-flex flex-column align-items-center">
+            <div class="card d-flex flex-row justify-content-center align-items-center border border-opacity-10 border-start-0 border-end-0 rounded-0 bg-transparent pt-3 pb-3" style="width: 15rem;">
+              <img class="img-logo rounded-circle shadow" style="width: 50px; height: 50px;" src="./img/logo.png" alt="logo picture" />
+              <div class="footer-title-part1 ms-2 text-white">Community</div>
+            </div>
+            <ul class="Community-list list-unstyled mt-2">
+              <li class="link-secondary">Issues</li>
+              <li class="link-secondary">Discussions</li>
+              <li class="link-secondary">Open Collective</li>
+            </ul>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#054c584d" fill-opacity="1" d="M0,32L48,32C96,32,192,32,288,58.7C384,85,480,139,576,186.7C672,235,768,277,864,288C960,299,1056,277,1152,240C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <hr class="text-light fs-1 mt-4">
+        <p class="copyright fs-5 text-center text-white fst-italic"><span class="text-warning">Copyright &copy;</span>, 2025, <span class="text-uppercase">Exption Nexus</span>.</p>
+      </div>
+    </footer>
+<!-- /footer -->
 
 
-    
     <!-- / Bootstrap js.min CDN Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JavaScript -->
