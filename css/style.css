@@ -358,10 +358,10 @@ background-color: #e0f4f7;
     top: 85%;
     left: 7%;
     background: linear-gradient(to left,
-            rgba(13, 23, 33, 0.1),
-            rgba(13, 23, 33, 0.3),
-            rgba(13, 23, 33, 0.6),
-            rgba(13, 23, 33, 1));
+        rgba(13, 23, 33, 0.1),
+        rgba(13, 23, 33, 0.3),
+        rgba(13, 23, 33, 0.6),
+        rgba(13, 23, 33, 1));
     border-radius: 10px;
     height: 50px;
 }
@@ -524,6 +524,14 @@ background-color: #e0f4f7;
     z-index: 1;
     background: var(--third-color);
     border-radius: 5px;
+}
+
+.card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* ==== tech-tracks ==== */
