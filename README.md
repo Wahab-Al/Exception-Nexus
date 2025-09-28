@@ -26,7 +26,7 @@ Bootstrap 5
 
 ## Demo
 
-![Home Page]()
-![Empty Cart Page Screenshot]()  
-![Cart Page Screenshot]()  
-![Favorite Page Screenshot]()  
+![Home Page](https://github.com/Wahab-Al/Exception-Nexus/blob/61067389f21c1a3ed9d3ed683df4717c7631fecc/screenshots/Screenshot%202025-09-21%20233618.png)
+![Feature Courses](https://github.com/Wahab-Al/Exception-Nexus/blob/61067389f21c1a3ed9d3ed683df4717c7631fecc/screenshots/Screenshot%202025-09-21%20233700.png)  
+![Core Tech Tracks](https://github.com/Wahab-Al/Exception-Nexus/blob/61067389f21c1a3ed9d3ed683df4717c7631fecc/screenshots/Screenshot%202025-09-21%20233752.png)  
+![Footer](https://github.com/Wahab-Al/Exception-Nexus/blob/61067389f21c1a3ed9d3ed683df4717c7631fecc/screenshots/Screenshot%202025-09-21%20233822.png)  
