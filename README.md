@@ -30,3 +30,11 @@ Bootstrap 5
 ![Feature Courses](https://github.com/Wahab-Al/Exception-Nexus/blob/61067389f21c1a3ed9d3ed683df4717c7631fecc/screenshots/Screenshot%202025-09-21%20233700.png)  
 ![Core Tech Tracks](https://github.com/Wahab-Al/Exception-Nexus/blob/61067389f21c1a3ed9d3ed683df4717c7631fecc/screenshots/Screenshot%202025-09-21%20233752.png)  
 ![Footer](https://github.com/Wahab-Al/Exception-Nexus/blob/61067389f21c1a3ed9d3ed683df4717c7631fecc/screenshots/Screenshot%202025-09-21%20233822.png)  
+
+---
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Wahab-Al/Exception-Nexus.git
